@@ -4,13 +4,13 @@ import mf.aarr.ast.liveVariableAnalysis.adt._
 import mf.aarr.ast.liveVariableAnalysis.analysis.AnalysisFunction.{analysis, end, out}
 import mf.aarr.ast.liveVariableAnalysis.analysis.Graph
 
-object DefaultWhileExample {
+object WhileExampleScratch {
   /**
    * c := 10;
    * y := 1;
    * while 1 <= c do
-   *    y := y * c;
-   *    c := c - 1;
+   * y := y * c;
+   * c := c - 1;
    * end;
    * res := y;
    *
@@ -32,7 +32,7 @@ object DefaultWhileExample {
     , 2 -> out(3)
     , 3 -> out(4)
     , 4 -> out(5)
-    , 5 -> out(3,4)
+    , 5 -> out(3, 4)
     , 6 -> end
   )
 
