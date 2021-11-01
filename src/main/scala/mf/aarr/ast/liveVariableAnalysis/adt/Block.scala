@@ -15,5 +15,5 @@ case class AssignmentBlock(label: Int, ass: Assignment) extends Block
 case class ConditionalBlock(label: Int, condition: BExp) extends Block
 
 /** v := exp */
-case class Assignment(v: Var, exp: AExp)
+case class Assignment(v: Var, exp: Exp)
 
